@@ -1,5 +1,5 @@
 /// <reference types="cypress" />
-describe("A field not exists", () => {
+describe("A field not exists test", () => {
   it("Verify the presence of the field named Made Up Field that does not exist", () => {
     cy.visit("https://www.planday.com/signup/signup/#/form");
 
