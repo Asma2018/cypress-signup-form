@@ -59,3 +59,7 @@ have appeared beneath each field.
 - Password: A random 8 character password of your choice, make sure it is included
   with the results output
   Check the checkbox and submit the form.
+
+  # Login.spec.js
+
+  Verify that the next page has the URL containing [CompanyName].com

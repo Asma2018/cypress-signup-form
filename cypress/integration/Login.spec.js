@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
-describe("A field not exists Test", () => {
-  it("Verify the presence of the field named Made Up Field that does not exist", () => {
+describe("Verify URL", () => {
+  it("Verify the presence of the field named Made Up Field that does not existVerify that the next page has the URL containing [CompanyName].com", () => {
     cy.visit("https://www.planday.com/login/");
 
     cy.get('[ng-model="data.company"]').type("IgnoreTest1234");
@@ -16,9 +16,6 @@ describe("A field not exists Test", () => {
       .type("QAchallenge2020")
       .should("have.value", "QAchallenge2020");
     cy.get("button").contains("Log in").click();
-    cy.url().should(
-      "eq",
-      " https://ignoretest1234.planday.com/Pages/PortalPage.aspx?PageId=3954942#/dashboard/kpi-frontpage"
-    );
+    cy.url().should("include", "ignoretest1234.planday.com");
   });
 });
