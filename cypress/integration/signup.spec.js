@@ -51,4 +51,3 @@ describe("Check sign up form", () => {
     cy.get("span").contains("Start Your Free Trial").click();
   });
 });
-//

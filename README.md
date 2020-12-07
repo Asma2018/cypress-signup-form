@@ -11,23 +11,3 @@ npm install
 ```console
  npm test
 ```
-
-## Set it up to be tested in multiple browsers
-
-- chrome
-
-```console
-npm run test-chrome
-```
-
-- firefox
-
-```console
-npm run test-firefox
-```
-
-- edge
-
-```console
-npm run test-edge
-```
