@@ -23,7 +23,7 @@ describe("Check sign up form", () => {
 
     cy.get("[name=industry]")
       .select("Bar or nightclub")
-      .should("have.value", "Bar or nightclub");
+      .should("have.value", "Bar, Pub & Nightclub");
 
     cy.get("[name=employees] option").then((optionsNodeList) => {
       const values = Array.from(optionsNodeList).map(
