@@ -1,5 +1,5 @@
 /// <reference types="cypress" />
-describe("Verify fields", () => {
+describe("Verify fields in Signup", () => {
   it("verify that the fields Company Name, Industry, Number of Employees and Phone Number are present.", () => {
     cy.visit("https://www.planday.com/signup/signup/#/form");
 
