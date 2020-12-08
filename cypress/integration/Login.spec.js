@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 describe("Verify URL", () => {
-  it("Verify the presence of the field named Made Up Field that does not existVerify that the next page has the URL containing [CompanyName].com", () => {
+  it("Verify that the next page has the URL containing [CompanyName].com", () => {
     cy.visit("https://www.planday.com/login/");
 
     cy.get('[ng-model="data.company"]').type("IgnoreTest1234");
